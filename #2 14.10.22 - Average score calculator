@@ -1,0 +1,29 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+	// input
+	cout << "Enter 1st value: " << endl;
+	int firstValue;
+	cin >> firstValue;
+
+	cout << "Enter 2nd value: " << endl;
+	int secondValue;
+	cin >> secondValue;
+
+	cout << "Enter 3rd value: " << endl;
+	int thirdValue;
+	cin >> thirdValue;
+
+	// output
+	int result = (firstValue + secondValue + thirdValue) / 3;
+	cout << "Your average score: " << result << endl;
+
+
+	return 0;
+
+}
