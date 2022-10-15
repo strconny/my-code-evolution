@@ -1,0 +1,21 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	
+	char value = 'y';
+	while (value == 'y')
+	{
+		cout << "*Game played*" << endl;
+		cout << "Do you want to play again?" << endl;
+		cout << "Enter y/n: ";
+		cin >> value;
+	}
+	cout << "Bye!";
+
+	return 0;
+
+}
