@@ -1,0 +1,38 @@
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	
+	bool success = true;
+	string username;
+	string password;
+
+	cout << "***ADMIN PANEL***\n";
+	do
+	{
+		cout << "Enter your Username: " << endl;
+		cin >> username;
+		cout << "Enter your password: " << endl;
+		cin >> password;
+		if ((username == "Admin") && (password == "qwerty"))
+		{
+			cout << "\nYou are logged in as an Admin!";
+		}
+		else if ((username == "Moderator") && (password == "pass123"))
+		{
+			cout << "\nYou are logged in as a Moderator!";
+		}
+		else
+		{
+			cout << "\nWrong Username or Password! Try again!\n\n";
+			success = false;
+		}
+	} while (!success);
+
+	return 0;
+
+}
