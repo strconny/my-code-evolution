@@ -52,16 +52,16 @@ int main()
 				cout << "\n\nВы угадали число с " << tries << " попыток. Невероятно!";
 			}
 
-			if (tries <= 5)
+			else if (tries <= 5)
 			{
 				cout << "\n\nВы угадали число с " << tries << " попыток. Отлично!";
 			}
 
-			if (tries >= 6)
+			else if (tries >= 6)
 			{
 				cout << "\n\nВы угадали число с " << tries << " попыток. Неплохо!";
 			}
-			if (tries >= 8)
+			else if (tries >= 8)
 			{
 				cout << "\n\nВы угадали число с " << tries << " попыток. Могли бы и лучше!\n";
 			}
@@ -73,12 +73,12 @@ int main()
 
 	} while (guess != secretNumber && limit < 10);
 
-	if (limit >=10)
+	if (limit >= 10)
 	{
 		cout << "\n\nВы исчерпали количество попыток!" << endl;
 		cout << "\nИгра проиграна!" << endl;
 	}
-	
+
 
 	return 0;
 
