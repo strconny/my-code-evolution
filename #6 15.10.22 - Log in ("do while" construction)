@@ -10,20 +10,20 @@ int main()
 	bool success = true;
 	string username;
 	string password;
-	
+
 	do
 	{
 		cout << "Enter your Username: " << endl;
 		cin >> username;
 		cout << "Enter your password: " << endl;
 		cin >> password;
-		if ((username == "Admin") && (password == "qwerty"))
+		if ((username == "James") && (password == "qwerty"))
 		{
-			cout << "\nYou are logged in as an Admin!";
+			cout << "\nYou are logged in as an James!";
 		}
-		else if ((username == "Moderator") && (password == "pass123"))
+		else if ((username == "Gabe") && (password == "pass123"))
 		{
-			cout << "\nYou are logged in as a Moderator!";
+			cout << "\nYou are logged in as a Gabe!";
 		}
 		else
 		{
