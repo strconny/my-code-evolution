@@ -1,0 +1,33 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	
+
+	cout << "Enter your score: " << endl;
+	int score = 0;
+	cin >> score;
+
+	if (score >= 1000)
+	{
+		cout << "You scored 1000 or more. Super!" << endl;
+	}
+	else if (score >= 500)
+	{
+		cout << "You scored 500 or more. Nice!" << endl;
+	}
+	else if (score >= 100)
+	{
+		cout << "You scored 100 or more. Not bad!" << endl;
+	}
+	else
+	{
+		cout << "You lose. Try again!" << endl;
+	}
+
+	return 0;
+
+}
