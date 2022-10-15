@@ -7,15 +7,15 @@ int main()
 {
 
 	// input
-	cout << "Enter 1st value: " << endl;
+	cout << "Enter 1st score value: " << endl;
 	int firstValue;
 	cin >> firstValue;
 
-	cout << "Enter 2nd value: " << endl;
+	cout << "Enter 2nd score value: " << endl;
 	int secondValue;
 	cin >> secondValue;
 
-	cout << "Enter 3rd value: " << endl;
+	cout << "Enter 3rd score value: " << endl;
 	int thirdValue;
 	cin >> thirdValue;
 
