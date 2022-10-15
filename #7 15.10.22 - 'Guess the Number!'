@@ -1,0 +1,79 @@
+
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{
+
+
+
+	srand(static_cast<unsigned int>(time(0)));
+
+	int secretNumber = rand() % 100 + 1;
+
+	int tries = 0;
+
+	int guess;
+
+
+
+	setlocale(LC_ALL, "Russian");
+
+	cout << "Добро пожаловать в игру 'Угадай число!'\n\n";
+
+	cout << "Всего даётся 10 попыток!\n\n";
+
+
+	do
+	{
+
+
+		cout << "Введите предполагаемое число: \n\n";
+
+		cin >> guess;
+
+		tries++;
+
+		if (guess > secretNumber)
+		{
+			cout << "Загаданное число меньше, чем это!\n\n";
+		}
+		else if (guess < secretNumber)
+		{
+			cout << "Загаданное число больше, чем это!\n\n";
+		}
+		else if (guess == secretNumber)
+		{
+			if (tries <= 3)
+			{
+				cout << "Вы угадали число с " << tries << " попыток. Невероятно!";
+			}
+
+			if (tries <= 5)
+			{
+				cout << "Вы угадали число с " << tries << " попыток. Отлично!";
+			}
+
+			if (tries >= 6)
+			{
+				cout << "Вы угадали число с " << tries << " попыток. Хорошо!";
+			}
+			if (tries >= 8)
+			{
+				cout << "Вы угадали число с " << tries << " попыток. Не плохо!";
+			}
+		}
+		else
+		{
+			cout << "Вы ввели некорректное число!\n\n";
+		}
+
+	} while (guess != secretNumber);
+
+
+	return 0;
+
+}
