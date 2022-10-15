@@ -10,8 +10,7 @@ int main()
 	bool success = true;
 	string username;
 	string password;
-
-	cout << "***ADMIN PANEL***\n";
+	
 	do
 	{
 		cout << "Enter your Username: " << endl;
